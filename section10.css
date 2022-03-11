@@ -1,0 +1,256 @@
+body {
+    font-family: ;
+}
+
+.firstbox {
+    width: 80%;
+    height: fit-content;
+    background-color: aliceblue;
+    color: bisque;
+
+}
+
+h3 {
+    text-align: center;
+}
+/* first container */
+#container {
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+#container div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 4em;
+}
+/* second set of containers */
+
+
+#container2 {
+    background-color: #9aa1a5;
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap-reverse;
+    
+}
+
+#container2 div {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 5em;
+}
+
+/* container set 3 */
+#container3 {
+    background-color: #9aa1a5;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#container3 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    font-size: 5em;
+}
+
+/* container set 4 */
+
+#container4 {
+    background-color: #9aa1a5;
+    width: 98%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#container4 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#p1 {
+    margin-bottom: 150px;
+}
+
+#container5 {
+    background-color: #9aa1a5;
+    width: 98%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    align-content: space-around; /*this won't work if there is no flex wrap active. Try space between, center etc. */
+}
+
+#container5 div {
+    width: 400px;
+    height: 200px;
+    text-align: center;
+}
+
+#container6 {
+    background-color: #9aa1a5;
+    width: 98%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#container6 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 400px;
+}
+
+#container6 div:nth-of-type(3) {
+    align-self:center;
+}
+#container6 div:nth-of-type(5) {
+    align-self:flex-end;
+}
+
+#container7 {
+    background-color: #9aa1a5;
+    width: 80%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#container7 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 400px;
+}
+/* flex-grow */
+
+#container8 {
+    background-color: #9aa1a5;
+    width: 80%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+#container8 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 200px;
+}
+
+#container8 div:nth-of-type(1) {
+    flex-grow: 1;
+}
+
+#container8 div:nth-of-type(4) {
+    flex-grow: 1;
+}
+#container8 div:nth-of-type(5) {
+    flex-grow: 5;
+}
+/* flex-shrink */
+
+#container9 {
+    background-color: #9aa1a5;
+    width: 80%;
+    /* height: 500px; */
+    margin: 0 auto;
+    border: 5px solid #003049; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+
+#container9 div {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    flex-basis: 600px;
+}
+
+#container9 div:nth-of-type(1) {
+    flex-grow: 1;
+    flex-shrink: 1.5;
+}
+
+#container9 div:nth-of-type(4) {
+    flex-grow: 1;
+    flex-shrink: 1.2;
+}
+#container9 div:nth-of-type(5) {
+    flex-grow: 5;
+    flex-shrink: 1;
+}
+
+/* flex shorthand */
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid black;
+    height: 500px;
+    display: flex;
+}
+
+main .sidebar {
+    background-color: #6930c3;
+    border: 2px solid white;
+    flex: 1 2;
+}
+
+main .maincontent {
+    background-color: #80ffdb;
+    flex: 2 50%;
+}
+
